@@ -6,6 +6,11 @@ function updateClock(){
 
     let clock = document.getElementById('clock')
 
+    // teste com condições ternarias
+    // (hours < 10 )? clock.innerHTML = `0${hours}` : clock.innerHTML = `${hours}`;
+    // (minutes < 10 )? clock.innerHTML += `:0${minutes}` : clock.innerHTML += `:${minutes}`;
+    // (seconds < 10 )? clock.innerHTML += `:0${seconds}` : clock.innerHTML += `:${seconds}`;
+
     if  (hours < 10){
         clock.innerHTML = `0${hours}`
     }else{
